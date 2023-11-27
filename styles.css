@@ -1,8 +1,6 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +15,6 @@ canvas {
 .center-text {
     position: absolute;
     width: 40%;
-    text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -25,27 +22,31 @@ canvas {
     z-index: 2;
     pointer-events: none;
 }
-#randomWords > div {
-    margin: 10px;
-    padding: 5px;
-    display: inline-block;
+
+#randomWords {
+    width: 70vw;
+    height: 40vh;
+    font-family: 'Roboto Mono', sans-serif;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .letter {
-    display: inline-block;
-    margin: 2px;
-    padding: 5px;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30px;
-    border: 1px solid black;
     border-radius: 50%;
-    text-align: center;
-    line-height: 30px;
-
+    font-size: 50px;
 }
 
-#randomWords {
-    width: 300px;
-    height: 200px;
-    overflow: hidden; 
+.word {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+    margin-right: 8px;
 }
